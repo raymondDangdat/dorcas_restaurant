@@ -23,23 +23,28 @@ class SingleProductWidget extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: ClipRRect(
+            child: Container(
+              height: 150,
+              decoration: BoxDecoration(
+                color: Colors.redAccent,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(15),
                   topRight: Radius.circular(15),
-                ),
-                child: Image.network(
-                  product.image,
-                  width: double.infinity,
-                )),
+                )
+              ),
+              child: ClipRRect(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
+                  ),
+                  child: Image.network(
+                    product.image,
+                    width: double.infinity,
+                  fit: BoxFit.cover,)),
+            ),
           ),
           CustomText(
             text: product.name,
-            size: 1,
-            weight: FontWeight.bold,
-          ),
-          CustomText(
-            text: product.brand,
             color: Colors.grey,
           ),
           SizedBox(
@@ -65,6 +70,12 @@ class SingleProductWidget extends StatelessWidget {
                     cartController.addProductToCart(product);
                   })
             ],
+          ),
+
+          CustomText(
+            text: product.name,
+            size: 1,
+            weight: FontWeight.bold,
           ),
         ],
       ),

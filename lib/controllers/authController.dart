@@ -26,6 +26,8 @@ class UserController extends GetxController {
     ever(firebaseUser, _setInitialScreen);
   }
 
+
+
   _setInitialScreen(User user) {
     if (user == null) {
       Get.offAll(() => AuthenticationScreen());

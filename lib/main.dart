@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:untitled/controllers/add_product_controller.dart';
 import 'package:untitled/controllers/cart_controller.dart';
 import 'package:untitled/controllers/payments_controller.dart';
 import 'package:untitled/controllers/product_controller.dart';
@@ -17,6 +18,7 @@ void main() async {
     Get.put(ProducsController());
     Get.put(CartController());
     Get.put(PaymentsController());
+    Get.put(AddProductController());
   });
   runApp(MyApp());
 }

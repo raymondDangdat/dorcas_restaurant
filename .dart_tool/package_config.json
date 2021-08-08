@@ -200,6 +200,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "fluttertoast",
+      "rootUri": "file:///Users/dangdatraymond/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "get",
       "rootUri": "file:///Users/dangdatraymond/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/get-4.1.4",
       "packageUri": "lib/",
@@ -434,7 +440,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-08-08T15:37:45.879936Z",
+  "generated": "2021-08-08T20:33:58.451597Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

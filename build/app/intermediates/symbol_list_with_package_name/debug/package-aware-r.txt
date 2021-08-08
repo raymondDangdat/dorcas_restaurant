@@ -1107,6 +1107,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable corner
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1160,6 +1161,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable simple_button_background
+drawable toast_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1648,6 +1650,7 @@ layout select_dialog_singlechoice_material
 layout select_shipping_method_widget
 layout shipping_method_view
 layout support_simple_spinner_dropdown_item
+layout toast_custom
 layout wallet_test_layout
 menu add_payment_method
 menu payment_auth_web_view_menu

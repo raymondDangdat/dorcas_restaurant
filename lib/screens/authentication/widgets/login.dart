@@ -33,6 +33,7 @@ borderRadius: BorderRadius.circular(20)
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   child: TextField(
+                    keyboardType: TextInputType.emailAddress,
                     controller: userController.email,
                     decoration: InputDecoration(
                         icon: Icon(Icons.email_outlined),

@@ -1,9 +1,11 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:image/image.dart' as img;
+import 'package:untitled/constants/controllers.dart';
 import 'package:untitled/constants/firebase.dart';
 import 'package:uuid/uuid.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -92,7 +94,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
     if (file == null) return;
 
     final fileName = basename(file.path);
-    final destination = 'files/$fileName';
+    final destination = 'products/$fileName';
 
     task = FirebaseApi.uploadFile(destination, file);
     setState(() {});
@@ -101,6 +103,12 @@ class _ProductsScreenState extends State<ProductsScreen> {
 
     final snapshot = await task.whenComplete(() {});
     final urlDownload = await snapshot.ref.getDownloadURL();
+
+    if(urlDownload != null){
+      await addProductController.uploadFile(file, id);
+    }else{
+      Fluttertoast.showToast(msg: "Image could not be uploaded!");
+    }
 
     print('Download-Link: $urlDownload');
   }
@@ -193,7 +201,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
             
             SizedBox(height: 10,),
             TextFormField(
-              controller: categoryController,
+              controller: addProductController.category,
               textCapitalization: TextCapitalization.words,
               decoration: InputDecoration(labelText: 'Category'),
               textInputAction: TextInputAction.next,
@@ -209,7 +217,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
             ),
 
             TextFormField(
-              controller: nameController,
+              controller: addProductController.productName,
               textCapitalization: TextCapitalization.words,
               decoration: InputDecoration(labelText: 'Food Name'),
               textInputAction: TextInputAction.next,
@@ -225,7 +233,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
             ),
 
             TextFormField(
-              controller: priceController,
+              controller: addProductController.price,
               keyboardType: TextInputType.number,
               textCapitalization: TextCapitalization.words,
               decoration: InputDecoration(labelText: 'Food Price'),

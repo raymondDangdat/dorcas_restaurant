@@ -12,6 +12,7 @@ MERGED from [:firebase_core] /Users/dangdatraymond/StudioProjects/flutter-shoppi
 MERGED from [:stripe_payment] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-37:12
 MERGED from [:image_picker] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:fluttertoast] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dangdatraymond/.gradle/caches/transforms-2/files-2.1/b67c1f5d8511c1b26c5525eb0328045e/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.stripe:stripe-android:10.4.6] /Users/dangdatraymond/.gradle/caches/transforms-2/files-2.1/5c7e61c5e0214e26f2898c7b4c0e2d29/jetified-stripe-android-10.4.6/AndroidManifest.xml:2:1-29:12
@@ -202,6 +203,8 @@ MERGED from [:image_picker] /Users/dangdatraymond/StudioProjects/flutter-shoppin
 MERGED from [:image_picker] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/dangdatraymond/StudioProjects/flutter-shopping-app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/dangdatraymond/.gradle/caches/transforms-2/files-2.1/b67c1f5d8511c1b26c5525eb0328045e/multidex-2.0.0/AndroidManifest.xml:20:5-43
