@@ -109,7 +109,6 @@
     <string name="ending_in">%1$s - %2$s</string>
     <string name="expiry_date_hint">MM/JJ</string>
     <string name="expiry_label_short">Verval</string>
-    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Overige"</string>
     <string name="hzv_cancel_label">Annuleren</string>
     <string name="hzv_header_label">Beveiligde Checkout</string>
     <string name="invalid_card_number">Uw kaartnummer is ongeldig.</string>

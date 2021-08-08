@@ -15,6 +15,7 @@ class AuthenticationScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Obx(() => SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -27,7 +28,7 @@ class AuthenticationScreen extends StatelessWidget {
                   color: Colors.red,
                   image: DecorationImage(image: AssetImage(logo), fit: BoxFit.cover)
                 ),),
-            SizedBox(height: MediaQuery.of(context).size.width / 5),
+            SizedBox(height: MediaQuery.of(context).size.width / 12),
 
             Visibility(
                 visible: _appController.isLoginWidgetDisplayed.value,

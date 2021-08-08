@@ -4,6 +4,7 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:untitled/constants/controllers.dart';
 import 'package:untitled/screens/home/widgets/products.dart';
 import 'package:untitled/screens/home/widgets/shopping_cart.dart';
+import 'package:untitled/screens/products/products.dart';
 import 'package:untitled/widgets/custom_text.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -40,7 +41,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Obx(()=>UserAccountsDrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.black
+                  color: Colors.blueAccent
                 ),
                   accountName: Text(userController.userModel.value.name ?? ""),
                   accountEmail: Text(userController.userModel.value.email ?? ""))),
@@ -53,6 +54,28 @@ class HomeScreen extends StatelessWidget {
                  paymentsController.getPaymentHistory();
                 },
               ),
+              userController.userModel.value.name == "Admin" && userController.userModel.value.email == "dorcasadmin@gmail.com" ? Column(children: [
+                ListTile(
+                  leading: Icon(Icons.restaurant_rounded),
+                  title: CustomText(
+                    text: "Manage Foods",
+                  ),
+                  onTap: ()async {
+                    Navigator.pop(context);
+                    Get.to(() => ProductsScreen());
+                  },
+                ),
+
+                ListTile(
+                  leading: Icon(Icons.bookmark_border_rounded),
+                  title: CustomText(
+                    text: "Manage Orders",
+                  ),
+                  onTap: ()async {
+                    paymentsController.getOrders();
+                  },
+                ),
+              ],) : Container(),
               ListTile(
                 onTap: () {
                   userController.signOut();

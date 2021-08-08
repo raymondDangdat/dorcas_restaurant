@@ -59,6 +59,7 @@ class RegistrationWidget extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   child: TextField(
                     controller: userController.email,
+                    keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                         icon: Icon(Icons.email_outlined),
                         fillColor: Colors.white,
@@ -98,6 +99,7 @@ class RegistrationWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(25),
             child: CustomButton(
+              bgColor: Colors.blueAccent,
                 text: "Register", onTap: (){
                     userController.signUp();
                 }),

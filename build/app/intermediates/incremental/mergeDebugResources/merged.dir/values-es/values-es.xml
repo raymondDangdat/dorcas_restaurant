@@ -109,7 +109,6 @@
     <string name="ending_in">%1$s - %2$s</string>
     <string name="expiry_date_hint">MM/AA</string>
     <string name="expiry_label_short">Venc.</string>
-    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Varias"</string>
     <string name="hzv_cancel_label">Cancelar</string>
     <string name="hzv_header_label">Proceso de compra seguro</string>
     <string name="invalid_card_number">El número de tarjeta no es válido.</string>

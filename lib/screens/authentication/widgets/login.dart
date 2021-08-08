@@ -57,6 +57,7 @@ borderRadius: BorderRadius.circular(20)
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   child: TextField(
+                    keyboardType: TextInputType.emailAddress,
                     controller: userController.password,
                     obscureText: true,
                     decoration: InputDecoration(
@@ -72,6 +73,7 @@ borderRadius: BorderRadius.circular(20)
           Padding(
             padding: const EdgeInsets.all(25),
             child: CustomButton(
+              bgColor: Colors.blueAccent,
                 text: "Login", onTap: (){
                   userController.signIn();
             }),

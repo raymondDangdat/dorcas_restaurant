@@ -53,7 +53,6 @@
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sessão com o Google"</string>
     <string name="czv_whitelist_no_label">Não</string>
     <string name="czv_whitelist_yes_label">Sim</string>
-    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diversas"</string>
     <string name="hzv_cancel_label">Cancelar</string>
     <string name="hzv_header_label">Finalização de compra segura</string>
     <string name="processing">A processar\u2026</string>

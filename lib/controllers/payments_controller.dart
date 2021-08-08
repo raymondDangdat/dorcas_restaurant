@@ -122,4 +122,21 @@ class PaymentsController extends GetxController {
       Get.to(() => PaymentsScreen());
     });
   }
+
+  getOrders() {
+    showLoading();
+    payments.clear();
+    firebaseFirestore
+        .collection(collection).orderBy("createdAt", descending: true)
+        .get()
+        .then((snapshot) {
+      snapshot.docs.forEach((doc) {
+        PaymentsModel payment = PaymentsModel.fromMap(doc.data());
+        payments.add(payment);
+      });
+      logger.i("length ${payments.length}");
+      dismissLoadingWidget();
+      Get.to(() => PaymentsScreen());
+    });
+  }
 }

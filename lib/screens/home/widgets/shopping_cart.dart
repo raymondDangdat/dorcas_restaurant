@@ -25,6 +25,8 @@ class ShoppingCartWidget extends StatelessWidget {
             SizedBox(
               height: 5,
             ),
+            userController.userModel.value.cart == null?
+                Center(child: Text('You have no item in your cart yet', style: TextStyle(color: Colors.red),),):
             Obx(()=>Column(
               children: userController.userModel.value.cart
                   .map((cartItem) => CartItemWidget(cartItem: cartItem,))
