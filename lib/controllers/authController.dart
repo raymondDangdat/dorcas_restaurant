@@ -14,6 +14,8 @@ class UserController extends GetxController {
   RxBool isLoggedIn = false.obs;
   TextEditingController name = TextEditingController();
   TextEditingController email = TextEditingController();
+  TextEditingController phone = TextEditingController();
+  TextEditingController address = TextEditingController();
   TextEditingController password = TextEditingController();
   String usersCollection = "users";
   Rx<UserModel> userModel = UserModel().obs;
@@ -80,6 +82,8 @@ class UserController extends GetxController {
       "name": name.text.trim(),
       "id": userId,
       "email": email.text.trim(),
+      "phone": phone.text.trim(),
+      "address" : address.text.trim(),
       "cart": []
     });
   }

@@ -71,7 +71,6 @@ class SingleProductWidget extends StatelessWidget {
                   })
             ],
           ),
-
           CustomText(
             text: product.name,
             size: 1,

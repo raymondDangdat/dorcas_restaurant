@@ -5,6 +5,9 @@ class PaymentsModel {
   static const AMOUNT = "amount";
   static const STATUS = "status";
   static const CREATED_AT = "createdAt";
+  static const USER_NAME = "username";
+  static const USER_ADDRESS = "address";
+  static const PHONE = "phone";
 
    String id;
    String paymentId;
@@ -12,8 +15,11 @@ class PaymentsModel {
    String status;
    DateTime createdAt;
    List cart;
+   String username;
+   String userAddress;
+   String phone;
 
-  PaymentsModel({this.id, this.paymentId, this.amount, this.status, this.createdAt, this.cart});
+  PaymentsModel({this.id, this.paymentId, this.amount, this.status, this.createdAt, this.cart, this.username, this.userAddress, this.phone});
 
   PaymentsModel.fromMap(Map data){
     id = data[ID];
@@ -22,5 +28,8 @@ class PaymentsModel {
     amount = data[AMOUNT];
     status = data[STATUS];
     cart = data[CART];
+    username = data[USER_NAME];
+    userAddress = data[USER_ADDRESS];
+    phone = data[PHONE];
   }
 }

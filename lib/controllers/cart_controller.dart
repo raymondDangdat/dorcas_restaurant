@@ -33,7 +33,10 @@ class CartController extends GetxController {
               "quantity": 1,
               "price": product.price,
               "image": product.image,
-              "cost": product.price
+              "cost": product.price,
+              "address" : userController.address,
+              "phone" : userController.phone,
+              "username" : userController.name,
             }
           ])
         });
