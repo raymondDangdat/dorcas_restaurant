@@ -5,7 +5,7 @@ class PaymentsModel {
   static const AMOUNT = "amount";
   static const STATUS = "status";
   static const CREATED_AT = "createdAt";
-  static const USER_NAME = "username";
+  static const USER_NAME = "name";
   static const USER_ADDRESS = "address";
   static const PHONE = "phone";
 

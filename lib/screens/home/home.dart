@@ -20,17 +20,32 @@ class HomeScreen extends StatelessWidget {
             weight: FontWeight.bold,
           ),
           actions: [
-            IconButton(
-                icon: Icon(Icons.shopping_cart),
-                onPressed: () {
-                  showBarModalBottomSheet(
-                    context: context,
-                    builder: (context) => Container(
-                      color: Colors.white,
-                      child: ShoppingCartWidget(),
-                    ),
-                  );
-                })
+            Padding(
+              padding: const EdgeInsets.only(right: 10, top: 10),
+              child: Container(
+                width: 45,
+                height: 40,
+                child: Stack(
+                  children: [
+                    IconButton(
+                        icon: Icon(Icons.shopping_cart),
+                        onPressed: () {
+                          showBarModalBottomSheet(
+                            context: context,
+                            builder: (context) => Container(
+                              color: Colors.white,
+                              child: ShoppingCartWidget(),
+                            ),
+                          );
+                        }),
+                    Positioned(
+                      right: 0,
+                        top: 7,
+                        child: Text('${userController.userModel.value.cart.length}', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold),))
+                  ],
+                ),
+              ),
+            )
           ],
           elevation: 0,
           centerTitle: true,
@@ -51,6 +66,7 @@ class HomeScreen extends StatelessWidget {
                   text: "Payments History",
                 ),
                 onTap: ()async {
+                  Navigator.pop(context);
                  paymentsController.getPaymentHistory();
                 },
               ),
@@ -72,6 +88,7 @@ class HomeScreen extends StatelessWidget {
                     text: "Manage Orders",
                   ),
                   onTap: ()async {
+                    Navigator.pop(context);
                     paymentsController.getOrders();
                   },
                 ),

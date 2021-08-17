@@ -5,6 +5,7 @@ import 'package:untitled/constants/app_constants.dart';
 import 'package:untitled/constants/controllers.dart';
 import 'package:untitled/constants/firebase.dart';
 import 'package:untitled/models/payments.dart';
+import 'package:untitled/screens/orders/orders.dart';
 import 'package:untitled/screens/payments/payments.dart';
 import 'package:untitled/utils/helpers/showLoading.dart';
 import 'package:untitled/widgets/custom_text.dart';
@@ -141,7 +142,7 @@ class PaymentsController extends GetxController {
       });
       logger.i("length ${payments.length}");
       dismissLoadingWidget();
-      Get.to(() => PaymentsScreen());
+      Get.to(() => OrdersScreen());
     });
   }
 }
