@@ -35,7 +35,7 @@ class ShoppingCartWidget extends StatelessWidget {
           ],
         ),
         Positioned(
-            bottom: 30,
+            bottom: 0,
             child: Container(
               width: MediaQuery.of(context).size.width,
               padding: EdgeInsets.all(8),

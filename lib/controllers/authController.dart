@@ -50,6 +50,7 @@ class UserController extends GetxController {
       });
     } catch (e) {
       debugPrint(e.toString());
+      Get.back();
       Get.snackbar("Sign In Failed", "Try again");
     }
   }

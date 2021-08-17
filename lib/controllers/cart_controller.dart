@@ -17,13 +17,12 @@ class CartController extends GetxController {
     super.onReady();
     ever(userController.userModel, changeCartTotalPrice);
   }
-
   void addProductToCart(ProductModel product) {
     try {
       if (_isItemAlreadyAdded(product)) {
         Get.snackbar("Check your cart", "${product.name} is already added");
       } else {
-        String itemId = Uuid().toString();
+        String itemId = Uuid().v4();
         userController.updateUserData({
           "cart": FieldValue.arrayUnion([
             {
@@ -34,9 +33,9 @@ class CartController extends GetxController {
               "price": product.price,
               "image": product.image,
               "cost": product.price,
-              "address" : userController.address,
-              "phone" : userController.phone,
-              "username" : userController.name,
+              // "address" : userController.address,
+              // "phone" : userController.phone,
+              // "username" : userController.name,
             }
           ])
         });
@@ -72,7 +71,6 @@ class CartController extends GetxController {
       userController.userModel.value.cart
           .where((item) => item.productId == product.id)
           .isNotEmpty;
-
   void decreaseQuantity(CartItemModel item){
     if(item.quantity == 1){
       removeCartItem(item);
@@ -84,7 +82,6 @@ class CartController extends GetxController {
       });
     }
   }
-
     void increaseQuantity(CartItemModel item){
       removeCartItem(item);
       item.quantity++;

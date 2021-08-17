@@ -68,6 +68,7 @@ class PaymentsController extends GetxController {
     } else {
       //case A
       StripePayment.cancelNativePayRequest();
+      Get.back();
       _showPaymentFailedAlert();
     }
   }
@@ -100,8 +101,12 @@ class PaymentsController extends GetxController {
       "paymentId": paymentId,
       "cart": userController.userModel.value.cartItemsToJson(),
       "amount": cartController.totalCartPrice.value.toStringAsFixed(2),
+      "name": userController.userModel.value.name,
+      "phone": userController.userModel.value.phone,
+      "address": userController.userModel.value.address,
       "createdAt": DateTime.now(),
     });
+    Get.back();
   }
 
   getPaymentHistory() {
