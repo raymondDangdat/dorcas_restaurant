@@ -11,6 +11,7 @@ import 'package:uuid/uuid.dart';
 class CartController extends GetxController {
   static CartController instance = Get.find();
   RxDouble totalCartPrice = 0.0.obs;
+  RxInt cartItems = 0.obs;
 
   @override
   void onReady() {
@@ -39,6 +40,7 @@ class CartController extends GetxController {
             }
           ])
         });
+        cartItems.value += 1;
         Get.snackbar("Item added", "${product.name} was added to your cart");
       }
     } catch (e) {

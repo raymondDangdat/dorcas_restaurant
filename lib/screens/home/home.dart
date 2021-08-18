@@ -38,10 +38,10 @@ class HomeScreen extends StatelessWidget {
                             ),
                           );
                         }),
-                    Positioned(
-                      right: 0,
-                        top: 7,
-                        child: Text('${userController.userModel.value.cart.length}', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold),))
+                    // Positioned(
+                    //   right: 0,
+                    //     top: 7,
+                    //     child: Text('${cartController.cartItems.value}', style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold),))
                   ],
                 ),
               ),
