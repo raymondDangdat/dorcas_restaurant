@@ -42,9 +42,7 @@ class UserController extends GetxController {
   void signIn() async {
     try {
       showLoading();
-      await auth
-          .signInWithEmailAndPassword(
-              email: email.text.trim(), password: password.text.trim())
+      await auth.signInWithEmailAndPassword(email: email.text.trim(), password: password.text.trim())
           .then((result) {
         _clearControllers();
       });

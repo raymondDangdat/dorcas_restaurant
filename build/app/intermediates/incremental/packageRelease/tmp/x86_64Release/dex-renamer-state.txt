@@ -1,0 +1,4 @@
+#Sat Oct 09 16:33:50 WAT 2021
+base.0=/Users/macbook/StudioProjects/dorcas_restaurant/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

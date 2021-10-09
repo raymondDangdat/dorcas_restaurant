@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/drawable-zh-xhdpi-v4/ic_unionpay_template_32.png",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/9976331c479698436f32dc0149a69969/jetified-stripe-android-10.4.6/res/drawable-zh-xhdpi-v4/ic_unionpay_template_32.png"
+    },
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/drawable-zh-xhdpi-v4/ic_unionpay.png",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/9976331c479698436f32dc0149a69969/jetified-stripe-android-10.4.6/res/drawable-zh-xhdpi-v4/ic_unionpay.png"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/drawable-anydpi-v24/ic_unionpay_template_32.xml",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/9976331c479698436f32dc0149a69969/jetified-stripe-android-10.4.6/res/drawable-anydpi-v24/ic_unionpay_template_32.xml"
+    },
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/drawable-anydpi-v24/ic_arrow.xml",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/fafc69ddc2905e2202f9f6e8a00704ba/jetified-stripe-3ds2-android-1.2.2/res/drawable-anydpi-v24/ic_arrow.xml"
+    },
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/drawable-anydpi-v24/ic_indicator.xml",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/fafc69ddc2905e2202f9f6e8a00704ba/jetified-stripe-3ds2-android-1.2.2/res/drawable-anydpi-v24/ic_indicator.xml"
+    },
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/drawable-anydpi-v24/ic_bank_generic.xml",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/9976331c479698436f32dc0149a69969/jetified-stripe-android-10.4.6/res/drawable-anydpi-v24/ic_bank_generic.xml"
+    }
+]

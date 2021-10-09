@@ -83,7 +83,9 @@ class RegistrationWidget extends StatelessWidget {
                   child: TextField(
                     controller: userController.phone,
                     keyboardType: TextInputType.phone,
+                    maxLength: 11,
                     decoration: InputDecoration(
+                      counterText: "",
                         icon: Icon(Icons.phone),
                         fillColor: Colors.white,
                         border: InputBorder.none,

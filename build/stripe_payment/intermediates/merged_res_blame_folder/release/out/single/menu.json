@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/menu/payment_auth_web_view_menu.xml",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/9976331c479698436f32dc0149a69969/jetified-stripe-android-10.4.6/res/menu/payment_auth_web_view_menu.xml"
+    },
+    {
+        "merged": "/Users/macbook/StudioProjects/dorcas_restaurant/build/stripe_payment/intermediates/res/merged/release/menu/add_payment_method.xml",
+        "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/9976331c479698436f32dc0149a69969/jetified-stripe-android-10.4.6/res/menu/add_payment_method.xml"
+    }
+]

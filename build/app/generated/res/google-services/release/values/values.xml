@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1000183442790-b1msmlvf2ph24qbsc37dncn16dhe3ckq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1000183442790</string>
+    <string name="google_api_key" translatable="false">AIzaSyB-vv9IjZDwSHsj2ZOjrOlLz9ufYKkNLWk</string>
+    <string name="google_app_id" translatable="false">1:1000183442790:android:5037049e7731f15509aca7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB-vv9IjZDwSHsj2ZOjrOlLz9ufYKkNLWk</string>
+    <string name="google_storage_bucket" translatable="false">dorcas--restaurant.appspot.com</string>
+    <string name="project_id" translatable="false">dorcas--restaurant</string>
+</resources>
